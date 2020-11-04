@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "I want to search for cars in London using google",
+        "description": "",
+        "id": "search-for-cars-in-london;i-want-to-search-for-cars-in-london-using-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2265381000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I open the web browser \"https://www.google.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.google.com/",
+                  "offset": 24
+                }
+              ],
+              "location": "GoogleSearchSteps.i_open_the_web_browser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 720924300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for \"cars in London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cars in London",
+                  "offset": 14
+                }
+              ],
+              "location": "GoogleSearchSteps.i_search_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56744500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id\u003d\"hdtb-msb-vis\"]/div[2]/a\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027LAPTOP-M3B29I87\u0027, ip: \u0027192.168.0.22\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, capabilities: {desiredCapabilities: {acceptInsecureCerts: true, browserName: firefox}}, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:headless: false, moz:processID: 23848, moz:profile: C:\\Users\\efost\\AppData\\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 4c2d3d4a-db26-408e-8751-718e7c2eaa1d\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"hdtb-msb-vis\"]/div[2]/a}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat pages.GoogleSearchPage.ValidateResultsPage(GoogleSearchPage.java:56)\r\n\tat steps.GoogleSearchSteps.the_results_are_displayed(GoogleSearchSteps.java:27)\r\n\tat ✽.And the results are displayed.(GoogleSearch.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the results are displayed.",
+            "match": {
+              "location": "GoogleSearchSteps.the_results_are_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I verify the numbers of \"gumtree\" links",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gumtree",
+                  "offset": 25
+                }
+              ],
+              "location": "GoogleSearchSteps.i_verify_the_numbers_of_links(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I navigate to each Gumtree Link",
+            "match": {
+              "location": "GoogleSearchSteps.i_navigate_to_each_Gumtree_Link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I verify the title is displayed",
+            "match": {
+              "location": "GoogleSearchSteps.i_verify_the_title_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I verify the number of cars greater then 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 41
+                }
+              ],
+              "location": "GoogleSearchSteps.i_verify_the_number_of_cars_grater_then(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Search For Cars in London",
+    "description": "",
+    "id": "search-for-cars-in-london",
+    "keyword": "Feature",
+    "uri": "GoogleSearch.feature"
+  }
+]
